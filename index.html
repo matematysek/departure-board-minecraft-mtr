@@ -6,16 +6,93 @@
 	
 	<body>
 		<div id="test"></div>
-		
+		<body style="background-color:gray;">
 		<script src="./js/departure-board.js"></script>
 		<script>
 		
-			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 2, letterCount: 25 }); 
-			board.setValue (['19:30 London King\'s Cross', '19:42 Sheffield']);
+			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 1, letterCount: 25 }); 
+		   
+            board.setValue (['02m30s Spawn']);
 			
 			window.setTimeout (function () {
-			 	board.setValue ('19:42 Sheffield');
-			}, 12000);
+			 	board.setValue ('02m15s Spawn');
+			}, 15000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('02m00s Spawn');
+			}, 30000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('01m45s Spawn');
+			}, 45000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('01m30s Spawn');
+			}, 60000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('01m15s Spawn');
+			}, 75000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('01m00s Spawn');
+			}, 95000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('00m45s Spawn');
+			}, 105000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('00m30s Spawn');
+			}, 120000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('00m15s Spawn');
+			}, 135000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('02m30s Depot');
+			}, 150000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('02m15s Spawn');
+			}, 165000);
+	
+			window.setTimeout (function () {
+			 	board.setValue ('02m00s Depot');
+			}, 180000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('01m45s Depot');
+			}, 195000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('01m30s Depot');
+			}, 210000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('01m15s Depot');
+			}, 225000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('01m00s Depot');
+			}, 240000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('00m45s Depot');
+			}, 255000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('00m30s Depot');
+			}, 270000);
+            	
+			window.setTimeout (function () {
+			 	board.setValue ('00m15s Depot');
+			}, 285000);
+                        	
+			window.setTimeout (function () {
+			 	board.setValue ('');
+			}, 300000);
 
 		</script>
 	</body>
