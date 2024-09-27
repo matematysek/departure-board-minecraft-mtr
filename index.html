@@ -4,17 +4,24 @@
 		<link rel="stylesheet" href="./css/departure-board.css" />
 	</head>
 	
-	<body>
-		<div id="test"></div>
-		<body style="background-color:black;">
+	<body style="background-color:black;">
+		<div id="0"></div> <br>
 		<script src="./js/departure-board.js"></script>
+        <div id="1"></div> <br>
+		<script src="./js/departure-board1.js"></script>
+        <div id="2"></div>
+		<script src="./js/departure-board2.js"></script>
 		<script>
-		
-var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 1, letterCount: 25 });
 
+var board = new DepartureBoard (document.getElementById ('0'), { rowCount: 1, letterCount: 23 });		
+var board2 = new DepartureBoard (document.getElementById ('1'), { rowCount: 1, letterCount: 23 });	
+var board3 = new DepartureBoard (document.getElementById ('2'), { rowCount: 1, letterCount: 23 });	
 
 setInterval(function() {
-    board.setValue (['02m30s Spawn']);
+    
+    board.setValue (['02m30s Spawn'])
+    board2.setValue (['between Spawn and Depot'])
+    board3.setValue (['every other train only!']);
 			
 			window.setTimeout (function () {
 			 	board.setValue ('02m15s Spawn');
@@ -92,8 +99,9 @@ setInterval(function() {
 			 	board.setValue ('00m15s Depot');
 			}, 285000);
 
-}, 5 * 60 * 1000);
-
+}, 1000);
+var board1 = new DepartureBoard1 (document.getElementById ('test1'), { rowCount: 1, letterCount: 23 });
+var board2 = new DepartureBoard2 (document.getElementById ('test2'), { rowCount: 1, letterCount: 23 });
 
 		</script>
 	</body>
