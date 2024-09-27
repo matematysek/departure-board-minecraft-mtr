@@ -1,7 +1,7 @@
 # departure-board
 
 Departure board is a JavaScript/CSS3 implementation of a rail station departure board.
-
+Feel free to fork, suggest, offer contributions or help, but most importantly have fun!
 
 ## Usage
 In the html file set what do you want to be shown on the frrst line and after how many ms it will be gone. Also you should set an cycle duration (also in ms)
