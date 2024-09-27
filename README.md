@@ -1,27 +1,21 @@
 # departure-board
 
-Departure board is a JavaScript/CSS3 implementation of a rail station departure board. It was created as an experiment to see how browsers handle many transitions simultaneously. 
-
-The conclusion was: not great. At the time of posting, I'm getting the following results on my Mac...
-
-* WebKit - Inconsistent. Sometimes runs smoothy, but most of the time it's jumpy and the whole document often flashes.
-* Firefox - Had the smoothest results, but it looks like it is achieving this by ignoring some transitions when there are too many at once.
-* Opera - Handled the transitions in much the same way as Firefox, except the text appeared blotchy during the transform.
-* IE - Untested.
-
-See the example in action at: http://paulcuth.me.uk/departure-board
+Departure board is a JavaScript/CSS3 implementation of a rail station departure board.
 
 
-## Acknowledgements
-
-The CSS styling that is used in this project is heavily based on [Jakub Hampl](https://github.com/gampleman)'s great article "[Designing a departures board with CSS3](http://gampleman.eu/post/1488470623/designing-a-departures-board-with-css3)".
-
+## Usage
+In the html file set what do you want to be shown on the frrst line and after how many ms it will be gone. Also you should set an cycle duration (also in ms)
+Place 4 of https://www.curseforge.com/minecraft/mc-mods/webdisplays screens next to each other and activate it.
+Run the webpage on a server, IIS in WIN 10/11 will be good too.
+Open ingame in the screen the IP you ran the page at.
+Enjoy.
+NOTICE: The board starts showing stuff after one interval set in html has lasted.
 
 ## License 
 
 (The MIT License)
 
-Copyright (c) 2011 Paul Cuthbertson &lt;github@paulcuth.me.uk&gt;
+Copyright (c) 2011 Paul Cuthbertson and Matej Gebauer
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

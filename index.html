@@ -6,13 +6,15 @@
 	
 	<body>
 		<div id="test"></div>
-		<body style="background-color:gray;">
+		<body style="background-color:black;">
 		<script src="./js/departure-board.js"></script>
 		<script>
 		
-			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 1, letterCount: 25 }); 
-		   
-            board.setValue (['02m30s Spawn']);
+var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 1, letterCount: 25 });
+
+
+setInterval(function() {
+    board.setValue (['02m30s Spawn']);
 			
 			window.setTimeout (function () {
 			 	board.setValue ('02m15s Spawn');
@@ -89,10 +91,9 @@
 			window.setTimeout (function () {
 			 	board.setValue ('00m15s Depot');
 			}, 285000);
-                        	
-			window.setTimeout (function () {
-			 	board.setValue ('');
-			}, 300000);
+
+}, 5 * 60 * 1000);
+
 
 		</script>
 	</body>

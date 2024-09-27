@@ -6,10 +6,10 @@ var DepartureBoard = function (element, options) {
 	this._element = element;
 	this._letters = [];
 	
-	element.className += ' departure-board';
+	element.className += 'departure-board';
 
 	var rowCount = options.rowCount || 1,
-		letterCount = options.letterCount || 25,
+		letterCount = options.letterCount || 23,
 		letter,
 		rowElement;
 	
