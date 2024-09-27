@@ -5,7 +5,7 @@ Departure board is a JavaScript/CSS3 implementation of a rail station departure 
 
 ## Usage
 In the html file set what do you want to be shown on the frrst line and after how many ms it will be gone. Also you should set an cycle duration (also in ms)
-Place 4 of https://www.curseforge.com/minecraft/mc-mods/webdisplays screens next to each other and activate it.
+Place 4 of https://www.curseforge.com/minecraft/mc-mods/webdisplays (or fork) screens next to each other and activate it.
 Run the webpage on a server, IIS in WIN 10/11 will be good too.
 Open ingame in the screen the IP you ran the page at.
 Enjoy.
